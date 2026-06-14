@@ -11,17 +11,17 @@ public class App {
     //Welcome User and collect input
     System.out.println("Welcome to the Ounce Convertor.");
     System.out.println("Please enter the amount of Ounces: ");
-    String userQuantityOunces = userReader.nextLine();
+    int userQuantityOunces = Integer.parseInt(userReader.nextLine());
     System.out.println("Your input was received.");
 
     //Convert User input
-    float userQuantityPounds = converterOunces.toPounds(userQuantityOunces);
-    String userQuantityPoundsAndOunces = converterOunces.toPoundsAndOunces(UserQuantityOunces);
+    String userQuantityPounds = converterOunces.toPounds(userQuantityOunces);
+    String userQuantityPoundsAndOunces = converterOunces.toPoundsAndOunces(userQuantityOunces);
 
     //Return requested output
-    System.out.println(userQuantityOunces + " Ounces is " + userQuantityPounds "Pounds.");
+    System.out.println(userQuantityOunces + " Ounces is " + userQuantityPounds + ".");
     System.out.println(userQuantityOunces + " Ounces is " + userQuantityPoundsAndOunces + ".");
-    System.out.println("Thank you for using the Ounce Converter.")
+    System.out.println("Thank you for using the Ounce Converter.");
 
 
   }
